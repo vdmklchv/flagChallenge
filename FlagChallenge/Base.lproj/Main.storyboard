@@ -3,6 +3,7 @@
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -37,7 +38,6 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="flagListLabel" destination="oqt-B6-X7w" id="Dcf-gd-RGv"/>
                                     <outlet property="flaglistLabel" destination="oqt-B6-X7w" id="dJu-Aq-nQg"/>
                                     <outlet property="flaglistPicture" destination="LUp-hA-SAH" id="hje-YX-Csw"/>
                                 </connections>
@@ -71,6 +71,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xel-zC-bvh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-26.086956521739133" y="101.78571428571428"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="hbc-MU-iec">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" id="24S-dK-hYD" customClass="DetailViewController" customModule="FlagChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YOZ-jc-zNW">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iL2-YL-lEg">
+                                <rect key="frame" x="0.0" y="44" width="390" height="766"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DUT-UX-31W"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DUT-UX-31W" firstAttribute="bottom" secondItem="iL2-YL-lEg" secondAttribute="bottom" id="BCF-2j-OyY"/>
+                            <constraint firstItem="iL2-YL-lEg" firstAttribute="top" secondItem="DUT-UX-31W" secondAttribute="top" id="Fg5-qL-Q27"/>
+                            <constraint firstItem="DUT-UX-31W" firstAttribute="trailing" secondItem="iL2-YL-lEg" secondAttribute="trailing" id="aVu-la-BRj"/>
+                            <constraint firstItem="iL2-YL-lEg" firstAttribute="leading" secondItem="DUT-UX-31W" secondAttribute="leading" id="jP9-3O-7FQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="image" destination="iL2-YL-lEg" id="iRr-dj-kgp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="euJ-xY-bWW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1592" y="94"/>
         </scene>
     </scenes>
     <resources>

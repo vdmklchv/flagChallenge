@@ -37,10 +37,21 @@ class ViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "flaglistItem", for: indexPath) as! flagCell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "flaglistItem", for: indexPath) as? flagCell else {
+            return UITableViewCell()
+        }
         cell.flaglistLabel?.text = String(countryNames[indexPath.row])
         cell.flaglistPicture?.image = UIImage(named: countryImages[indexPath.row])
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = storyboard?.instantiateViewController(identifier: "DetailViewController") as! DetailViewController
+        if let image = UIImage(named: countryImages[indexPath.row]) {
+            vc.flagImage = image
+        }
+        vc.countryName = countryNames[indexPath.row]
+        navigationController?.pushViewController(vc, animated: true)
     }
 
 

@@ -25,6 +25,7 @@
 		B584801F2566E5790038F819 /* us@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B58480072566E5790038F819 /* us@3x.png */; };
 		B58480202566E5790038F819 /* france@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B58480082566E5790038F819 /* france@3x.png */; };
 		B58480222566E5790038F819 /* monaco@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B584800A2566E5790038F819 /* monaco@3x.png */; };
+		B58480292567D8670038F819 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58480282567D8670038F819 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		B58480072566E5790038F819 /* us@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "us@3x.png"; sourceTree = "<group>"; };
 		B58480082566E5790038F819 /* france@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "france@3x.png"; sourceTree = "<group>"; };
 		B584800A2566E5790038F819 /* monaco@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "monaco@3x.png"; sourceTree = "<group>"; };
+		B58480282567D8670038F819 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				B5847FDF2566E06D0038F819 /* AppDelegate.swift */,
 				B5847FE12566E06D0038F819 /* SceneDelegate.swift */,
 				B5847FE32566E06D0038F819 /* ViewController.swift */,
+				B58480282567D8670038F819 /* DetailViewController.swift */,
 				B5847FE52566E06D0038F819 /* Main.storyboard */,
 				B5847FE82566E0710038F819 /* Assets.xcassets */,
 				B5847FEA2566E0710038F819 /* LaunchScreen.storyboard */,
@@ -196,6 +199,7 @@
 				B5847FE42566E06D0038F819 /* ViewController.swift in Sources */,
 				B5847FE02566E06D0038F819 /* AppDelegate.swift in Sources */,
 				B5847FE22566E06D0038F819 /* SceneDelegate.swift in Sources */,
+				B58480292567D8670038F819 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
